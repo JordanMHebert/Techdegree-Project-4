@@ -1,0 +1,56 @@
+// ======================================
+//  Variables
+// ======================================
+
+
+// Colors
+$white: #fff;
+
+$color-primary: #278da4; // teal
+$color-primary-light: lighten($color-primary, 10%);
+$color-secondary: #b13c69; // dark violet red
+$color-accent: #eeea72;
+$color-shade: #eee;
+
+$color-text: #343434;
+$color-bg: #3acec2;
+$color-bg-light: #009fe1;
+
+
+// Fonts
+$font-stack-primary: 'Raleway', sans-serif;
+$font-stack-secondary: 'Bree Serif', serif;
+
+
+// Layout
+$max-width: 1000px;
+$gutter: 10px;
+
+
+//breakpoints
+$breakpoints: (
+	'xs': 575px,
+	'sm': 576px,
+	'med': 768px,
+	'lg':	992px,
+	);
+
+
+  /* ============================================= */
+  /*              theme colors                    */
+  /* ============================================= */
+  //theme colors
+$themes: (
+	'col-1': #927bc1,
+	'col-2':	#fd7856,
+	'col-3': #deb2ee,
+	'col-4': #7ee6fd,
+	'col-5': #88d9a0,
+	'col-6': #4da2bb,
+  'col-7': #ec9fa3,
+  'col-8': #fd9f85,
+  'col-9': #e4757a,
+  'col-10': #63cc82,
+  'col-11': #51ddfc,
+  'col-12': #80e8d1,
+	);
