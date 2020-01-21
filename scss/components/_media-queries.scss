@@ -12,19 +12,19 @@
   }
 
   .row {
-    flex-direction: row;
+    @include row;
   }
 
   [class^=col] {
-    display: flex;
+    @include align;
+    @include display;
     justify-content: center;
     margin-top: 0;
-    align-items: center;
-  }
+}
 
   [class^=col] + [class^=col] {
-    margin-left: 10px;
-  }
+    @include left;
+}
 
 
   @each $flex, $box in $flex {
@@ -34,10 +34,10 @@
   }
 
   .nav {
-    flex-direction: row;
+    @include row;
+    @include align;
     justify-content: flex-end;
-    align-items: center;
-  }
+}
 
   .nav-link {
     flex-basis: 100px;
@@ -48,8 +48,8 @@
   }
 
   .btn + .btn {
-    margin-left: 10px;
-  }
+    @include left;
+}
 
   .logo {
     margin-left: initial;

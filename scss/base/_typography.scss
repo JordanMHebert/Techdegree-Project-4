@@ -3,9 +3,9 @@
 /* ============================================= */
 
 * {
+  @include box;
   font-family: 'Lato', sans-serif;
   color: $color-text;
-  box-sizing: border-box;
 }
 
 p {
@@ -20,12 +20,12 @@ a {
 /*              Typography                       */
 /* ============================================= */
 .headline-primary {
+  @include left;
   color: $color-primary;
-  margin-left: 10px;
 }
 
 .headline-secondary {
-  font-weight: 300;
+  @include weight;
   color: $color-secondary;
 }
 
@@ -35,11 +35,11 @@ a {
 }
 
 .blockquote {
+  @include weight;
+  @include radius;
   font-size: 1.5em;
-  font-weight: 300;
   font-style: italic;
   margin-left: 20px;
   padding-left: 20px;
   border-left: 8px solid $color-primary;
-  border-radius: 5px;
 }

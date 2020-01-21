@@ -2,15 +2,15 @@
 /*              Forms                            */
 /* ============================================= */
 .form {
-  flex-basis: 100%;
+  @include basis;
 }
 
 .input {
-  display: block;
+  @include border;
+  @include block;
+  @include pad;
   width: 94%;
   margin: 10px auto 0;
-  border: none;
-  padding: 10px;
   border-bottom: 5px solid $color-primary;
 }
 

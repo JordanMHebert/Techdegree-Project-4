@@ -357,9 +357,9 @@ template {
 /*              Base styles                      */
 /* ============================================= */
 * {
+  box-sizing: border-box;
   font-family: "Lato", sans-serif;
   color: #2f4f4f;
-  box-sizing: border-box;
 }
 
 p {
@@ -374,8 +374,8 @@ a {
 /*              Typography                       */
 /* ============================================= */
 .headline-primary {
-  color: #58e1c1;
   margin-left: 10px;
+  color: #58e1c1;
 }
 
 .headline-secondary {
@@ -389,13 +389,13 @@ a {
 }
 
 .blockquote {
-  font-size: 1.5em;
   font-weight: 300;
+  border-radius: 5px;
+  font-size: 1.5em;
   font-style: italic;
   margin-left: 20px;
   padding-left: 20px;
   border-left: 8px solid #58e1c1;
-  border-radius: 5px;
 }
 
 /* ============================================= */
@@ -405,13 +405,13 @@ a {
 /*              Buttons                          */
 /* ============================================= */
 .btn {
-  margin-top: 15px;
-  width: 100%;
-  color: #fff;
   border: none;
-  padding: 10px 0;
-  text-transform: uppercase;
   border-radius: 5px;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 15px;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .default {
@@ -442,11 +442,11 @@ a {
 }
 
 .input {
+  border: none;
   display: block;
+  padding: 10px;
   width: 94%;
   margin: 10px auto 0;
-  border: none;
-  padding: 10px;
   border-bottom: 5px solid #58e1c1;
 }
 
@@ -463,18 +463,18 @@ a {
 /*              Navigation                       */
 /* ============================================= */
 .nav {
-  padding-left: 0;
-  flex-basis: 100%;
-  display: flex;
   flex-direction: column;
+  display: flex;
+  flex-basis: 100%;
+  padding-left: 0;
 }
 
 .nav-link {
-  text-align: center;
-  border-radius: 5px;
-  padding: 10px 0;
   display: block;
+  border-radius: 5px;
   width: 100%;
+  padding: 10px 0;
+  text-align: center;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
@@ -509,6 +509,8 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
+  max-width: 100%;
 }
 
 /* ============================================= */
@@ -519,17 +521,17 @@ a {
 }
 
 .row {
-  display: flex;
   flex-direction: column;
+  display: flex;
   padding: 1em 10px;
 }
 
 [class^=col] {
-  margin-top: 10px;
   flex-basis: 100%;
-  min-height: 25px;
-  padding: 10px;
   border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  min-height: 25px;
 }
 
 .theme.col-1 {
@@ -606,10 +608,10 @@ a {
   }
 
   [class^=col] {
+    align-items: center;
     display: flex;
     justify-content: center;
     margin-top: 0;
-    align-items: center;
   }
 
   [class^=col] + [class^=col] {
@@ -666,8 +668,8 @@ a {
 
   .nav {
     flex-direction: row;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: flex-end;
   }
 
   .nav-link {

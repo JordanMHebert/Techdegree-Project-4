@@ -17,11 +17,78 @@
   }
 }
 
+// box-sizing
+@mixin box {
+box-sizing: border-box;
+}
+
+// border-radius
+@mixin radius{
+  border-radius: 5px;
+}
+
+// width
+@mixin width{
+  width: 100%;
+}
+
+// padding
+@mixin padding{
+  padding: 10px 0;
+}
+
+@mixin pad{
+  padding: 10px;
+}
+
+// font weight
+@mixin weight{
+font-weight: 300;
+}
+
+// margin
+@mixin left{
+  margin-left: 10px;
+}
+
+// border
+@mixin border {
+border: none;
+}
+
 // Center containers
 @mixin center {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+// flex display
+@mixin display{
+  display: flex;
+}
+
+@mixin block {
+  display: block;
+}
+
+// flex-basis
+@mixin basis{
+  flex-basis: 100%;
+}
+
+// flex-direction
+  @mixin row {
+    flex-direction: row;
+  }
+
+  @mixin column {
+    flex-direction: column;
+  }
+
+// alignment
+@mixin align {
+align-items: center;
 }
 
 // Rounded elements

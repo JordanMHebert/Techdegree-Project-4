@@ -7,17 +7,17 @@
 }
 
 .row {
-  display: flex;
-  flex-direction: column;
+  @include column;
+  @include display;
   padding: 1em 10px;
 }
 
 [class^=col] {
+  @include basis;
+  @include radius;
+  @include pad;
   margin-top: 10px;
-  flex-basis: 100%;
   min-height: 25px;
-  padding: 10px;
-  border-radius: 5px;
 }
 
 @each $theme, $color in $themes {
@@ -27,5 +27,5 @@
 }
 
 .card {
-  flex-basis: 100%;
+  @include basis;
 }
